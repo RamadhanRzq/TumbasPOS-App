@@ -69,8 +69,6 @@ const produkList = ref([
   { id: 5, nama: 'Minyak Goreng 1L', kategori: 'Sembako', harga: 14000, stok: 35 },
 ])
 
-// TEST PUSH
-
 </script>
 
 <template>
@@ -81,7 +79,7 @@ const produkList = ref([
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
       <div class="bg-white shadow-md rounded-2xl p-5">
         <h2 class="text-sm text-gray-500 mb-2">Total Produk</h2>
-        <p class="text-2xl font-bold text-blue-600">128</p>
+        <p class="text-2xl font-bold text-blue-600">{{ produkList.length }}</p>
       </div>
       <div class="bg-white shadow-md rounded-2xl p-5">
         <h2 class="text-sm text-gray-500 mb-2">Total Pendapatan</h2>
